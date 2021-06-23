@@ -29,6 +29,7 @@ const client = new ApolloClient({
   resolvers
 })
 
+
 client.query({ 
   query: gql`
     {
@@ -48,7 +49,8 @@ client.query({
 client.writeData({ 
   data:{
     cartHidden: true,
-    cartItems: []
+    cartItems: [],
+    itemCount: 0
   }
 })
 
